@@ -1,0 +1,81 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class CardEvents : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+{
+    private float hoverScale = 1.2f;
+    private float transitionTime = 0.1f;
+    private float hoverHeight = 100f;
+    private Vector3 originalScale;
+
+
+    private int index = -1; // Initialize the index to -1
+
+    private GameObject childObjectVisual;
+
+    public LTDescr scaleTween;
+    public LTDescr moveTween;
+    public LTDescr localMoveTween;
+
+    //new variables that actually work
+    public float originalPosX;
+    public float originalPosY;
+
+    public enum stateOfEvent { hover,exithover,clicked }
+
+    public stateOfEvent currentEvent;
+
+    void Start()
+    {
+        originalScale = transform.localScale;
+        childObjectVisual = gameObject.transform.GetChild(0).gameObject;
+        //originalPos = transform.position;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("Entered : " + HandManager.Instance.FindCardIndex(this.gameObject));
+        currentEvent = stateOfEvent.hover;
+        // Cancel any ongoing tweens
+        //LeanTween.cancel(childObjectVisual);
+
+
+        // Scale up the hovered card
+        scaleTween = LeanTween.scale(childObjectVisual, originalScale * hoverScale, transitionTime);
+
+        //// Move the card slightly up in world space
+        float targetY = transform.position.y + hoverHeight;
+        localMoveTween = LeanTween.moveY(gameObject, targetY, transitionTime);
+
+        HandManager.Instance.PushNeightbourCards(this.gameObject);
+
+
+
+    }
+
+
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Debug.Log("Exited : " + HandManager.Instance.FindCardIndex(this.gameObject));
+        currentEvent = stateOfEvent.exithover;
+        index = -1; // Reset the index when the pointer exits the card
+
+        //reset the position of all other cards
+        HandManager.Instance.PushNeightbourCards(null);
+
+        // Scale down the card
+        scaleTween = LeanTween.scale(childObjectVisual, originalScale, transitionTime);
+
+        //// Move the card back
+        localMoveTween = LeanTween.moveY(gameObject, originalPosY, transitionTime);
+
+
+
+
+    }
+
+}
