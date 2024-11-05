@@ -1,0 +1,158 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HandManager : MonoBehaviour
+{
+    public static HandManager Instance;
+
+    public List<GameObject> cards; // Array to hold card GameObjects
+    public List<GameObject> points;
+
+
+
+    //
+    public float angleDelta = 0;
+    public float radius = 0;
+    public GameObject centerObject;
+
+    public float pushingSpeed = 0.2f;
+    public float resetSpeed = 0.2f;
+    public float drawSpeed = 0.2f;
+
+    private void Awake()
+    {
+
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
+    public void Start()
+    {
+        //SetHandCards();
+    }
+
+
+    public void SetHandCards()
+    {
+        foreach (GameObject card in cards)
+        {
+            SetCardPosition(card);
+        }
+    }
+
+    public void PushNeightbourCards(GameObject cardRef)
+    {
+        int index;
+        int cardPos = 0;
+
+        if (cardRef != null)
+        {
+            index = FindCardIndex(cardRef);
+        }
+        else
+        {
+            index = -1;
+        }
+
+
+
+
+
+        foreach (GameObject card in cards)
+        {
+
+            if (index != -1)
+            {
+
+                if (cardPos < index)
+                {
+
+                    //save the original position
+                    //card.GetComponent<CardEvents>().originalPos = card.transform;
+
+                    //push left based on the distance wanted
+                    float posX = card.GetComponent<CardEvents>().originalPosX + (-200);
+                    card.GetComponent<CardEvents>().moveTween = LeanTween.moveX(card, posX, pushingSpeed);
+                }
+                else if (cardPos > index)
+                {
+                    //save the original position
+                    //card.GetComponent<CardEvents>().originalPos = card.transform;
+
+                    ////push right
+                    float posX = card.GetComponent<CardEvents>().originalPosX + (200);
+                    card.GetComponent<CardEvents>().moveTween = LeanTween.moveX(card, posX, pushingSpeed);
+                }
+                else
+                {
+                    //do nothing (its the index card)
+                }
+
+            }
+            else
+            {
+                float posX = card.GetComponent<CardEvents>().originalPosX;
+                card.GetComponent<CardEvents>().moveTween = LeanTween.moveX(card, posX, pushingSpeed);
+            }
+            //increase the card position
+            cardPos++;
+
+        }
+
+    }
+
+
+    public void SetCardPosition(GameObject cardRef)
+    {
+
+        int index = FindCardIndex(cardRef);
+        //The angle is based on how far the card is from the midpoint of the hand.
+        //Note that the midpoint will either be a whole number or x.5
+        float midpoint = (cards.Count - 1) / 2f;
+        float angle = angleDelta * (midpoint - index);
+
+        //Positive angles rotate counterclockwise, negative angles rotate clockwise
+        cards[index].transform.eulerAngles = new Vector3(0, 0, angle);
+
+        //Mathf uses radians
+        //A card that is rotated counterclockwise is on the left side of the hand,
+        //while a card rotated clockwise should be on the right side of the hand.
+        //This means we need to flip either the angle or the x value when calculating the
+        //position.
+        angle *= -Mathf.Deg2Rad;
+        float x = Mathf.Sin(angle) * radius;
+        float y = Mathf.Cos(angle) * radius;
+        //cards[index].transform.position = new Vector3(centerObject.transform.position.x + x, centerObject.transform.position.y + y, 0);
+
+        LeanTween.move(cards[index], new Vector3(centerObject.transform.position.x + x, centerObject.transform.position.y + y, 0), drawSpeed);
+
+        //save the original position
+        cards[index].GetComponent<CardEvents>().originalPosX = centerObject.transform.position.x + x;
+        cards[index].GetComponent<CardEvents>().originalPosY = centerObject.transform.position.y + y;
+    }
+
+    public int FindCardIndex(GameObject card)
+    {
+
+        // Iterate through the list of cards to find the index of the specified card
+        for (int i = 0; i < cards.Count; i++)
+        {
+            if (cards[i] == card)
+            {
+                return i; // Return the index if the card is found
+            }
+        }
+        return -1; // Return -1 if the card is not found
+    }
+
+
+}
