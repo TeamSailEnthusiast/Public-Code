@@ -1,0 +1,81 @@
+using UnityEngine;
+using DG.Tweening;
+
+public class CardAnimationManager : MonoBehaviour
+{
+    public RectTransform[] cards; // The array of cards
+    public float hoverScale = 1.2f; // Scale of the hovered card
+    public float moveDistance = 200f; // Max distance for cards to move
+    public float moveDuration = 0.5f; // Duration of the move animation
+    public float hoverDuration = 0.5f; // Duration of scale animation
+
+    private RectTransform hoveredCard = null; // The current card being hovered
+    private Vector3[] originalPositions; // Original positions of the cards
+
+    private void Start()
+    {
+        // Store the original positions of all cards
+        originalPositions = new Vector3[cards.Length];
+        for (int i = 0; i < cards.Length; i++)
+        {
+            originalPositions[i] = cards[i].localPosition;
+        }
+    }
+
+    private void OnMouseEnterCard(RectTransform card)
+    {
+        if (hoveredCard != null && hoveredCard != card)
+        {
+            ResetCards(); // Reset all cards before animating the new hover
+        }
+
+        hoveredCard = card;
+
+        // Scale the hovered card
+        card.DOScale(hoverScale, hoverDuration).SetEase(Ease.OutBack);
+
+        // Move the other cards based on proximity
+        for (int i = 0; i < cards.Length; i++)
+        {
+            if (cards[i] == card) continue; // Skip the hovered card
+
+            float distance = Vector3.Distance(card.localPosition, cards[i].localPosition);
+            float moveAmount = Mathf.Lerp(0, moveDistance, 1 - distance / moveDistance);
+            Vector3 moveDirection = (cards[i].localPosition - card.localPosition).normalized;
+
+            // Animate each non-hovered card
+            cards[i].DOAnchorPos(cards[i].localPosition + moveDirection * moveAmount, moveDuration)
+                .SetEase(Ease.OutCubic);
+        }
+    }
+
+    private void OnMouseExitCard(RectTransform card)
+    {
+        if (hoveredCard == card)
+        {
+            ResetCards(); // Reset all cards when hover ends
+            hoveredCard = null;
+        }
+    }
+
+    private void ResetCards()
+    {
+        // Reset the positions and scales of all cards
+        for (int i = 0; i < cards.Length; i++)
+        {
+            cards[i].DOScale(1f, hoverDuration).SetEase(Ease.InBack);
+            cards[i].DOAnchorPos(originalPositions[i], moveDuration).SetEase(Ease.InOutQuad);
+        }
+    }
+
+    // To be called when the mouse enters or exits a card
+    public void OnCardHoverEnter(RectTransform card)
+    {
+        OnMouseEnterCard(card);
+    }
+
+    public void OnCardHoverExit(RectTransform card)
+    {
+        OnMouseExitCard(card);
+    }
+}
