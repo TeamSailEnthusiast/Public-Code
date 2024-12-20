@@ -146,7 +146,7 @@ public class ComplexProceduralTilemapGenerator : MonoBehaviour
             // Spread outward to neighbors
             foreach (var neighbor in GetNeighbors(current))
             {
-                if (!visited.Contains(neighbor) && _random.NextDouble() > _floodFillNeighbourChance)
+                if (!visited.Contains(neighbor) && _random.NextDouble() > _floodFillCenterNeighbourChance)
                 {
                     queue.Enqueue(neighbor);
                 }
