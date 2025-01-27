@@ -1,0 +1,317 @@
+14:28:48,417 INFO  [main] v2.SmartFoxServer     - Boot sequence starts...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Hofmann/SmartFoxServer_2X/SFS2X/lib/xstream-1.3.1.jar) to field java.util.Properties.defaults
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+14:28:48,789 INFO  [main] core.SFSEventManager     - SFSEventManager initialized
+14:28:48,811 INFO  [main] impl.DefaultFileReplicator     - Using "C:\Users\Hofmann\AppData\Local\Temp\vfs_cache" as temporary files store.
+14:28:48,870 INFO  [main] v2.SmartFoxServer     - License loaded:
+
+==========================================
+LICENSE DETAILS
+------------------------------------------
+Type            : Community Edition
+Max users       : 100
+==========================================
+
+14:28:48,871 INFO  [main] managers.SFSBannedUserStorage     - BanUserStorage initialized
+14:28:48,883 INFO  [main] managers.SFSBannedUserManager     - BanUser data loaded: 0 records.
+14:28:48,888 INFO  [main] v2.SmartFoxServer     - Protocol Type is: BINARY
+14:28:48,891 INFO  [main] config.DefaultConfigLoader     - Loading: zones\LibZone.zone.xml
+14:28:48,914 INFO  [main] config.DefaultConfigLoader     - Loading: zones\MainZone.zone.xml
+14:28:48,927 INFO  [main] managers.SFSZoneManager     -
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: LibZone
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+14:28:48,957 INFO  [main] Extensions     - {__lib__}: PersistentDataManager -- initialized
+14:28:49,145 INFO  [main] Extensions     - {__lib__}: MinCharacterNameLength: 3
+14:28:49,147 INFO  [main] Extensions     - {__lib__}: SpeedCurve[3]: 5.6040893
+14:28:49,148 INFO  [main] Extensions     - {__lib__}: FeedbackMaxMessageLength: 800
+14:28:49,148 INFO  [main] Extensions     - {__lib__}: HalfHeight: 2048
+14:28:49,149 INFO  [main] Extensions     - {__lib__}: HalfWidth: 2048
+14:28:49,154 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 0, StatsID: 0
+14:28:49,154 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 1, StatsID: 0
+14:28:49,155 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 2, StatsID: 0
+14:28:49,155 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 3, StatsID: 1
+14:28:49,156 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 4, StatsID: 1
+14:28:49,156 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 5, StatsID: 1
+14:28:49,156 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 6, StatsID: 1
+14:28:49,157 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 7, StatsID: 1
+14:28:49,157 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 8, StatsID: 1
+14:28:49,158 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 9, StatsID: 1
+14:28:49,158 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 10, StatsID: 1
+14:28:49,158 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 11, StatsID: 1
+14:28:49,159 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 12, StatsID: 1
+14:28:49,159 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 13, StatsID: 1
+14:28:49,160 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 14, StatsID: 1
+14:28:49,161 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 15, StatsID: 1
+14:28:49,161 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 16, StatsID: 1
+14:28:49,162 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 17, StatsID: 1
+14:28:49,162 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 18, StatsID: 1
+14:28:49,162 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 19, StatsID: 1
+14:28:49,163 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 20, StatsID: 1
+14:28:49,163 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 21, StatsID: 1
+14:28:49,164 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 22, StatsID: 1
+14:28:49,164 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 23, StatsID: 1
+14:28:49,164 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 24, StatsID: 1
+14:28:49,165 INFO  [main] Extensions     - {__lib__}: Loaded SOTile: 25, StatsID: 1
+14:28:49,166 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 0
+14:28:49,168 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 1
+14:28:49,169 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 2
+14:28:49,169 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 3
+14:28:49,170 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 4
+14:28:49,170 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 5
+14:28:49,170 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 6
+14:28:49,171 INFO  [main] Extensions     - {__lib__}: Loaded SOBiome: 7
+14:28:49,171 INFO  [main] Extensions     - {__lib__}: StaticResources -- initialized
+14:28:49,172 INFO  [main] Extensions     - {__lib__}: LibExtension -- initialized
+14:28:49,173 INFO  [main] managers.SFSZoneManager     -
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: MainZone
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+14:28:49,184 WARN  [main] mmo.MMORoom     - Setting 'suppressUserList' for an MMORoom is not supported: [ MMORoom: PrototypingRoom, Id: 0, Group: default, AOI: (18.0, 2.0, 18.0) ]
+14:28:49,185 INFO  [main] managers.SFSRoomManager     - Room created: { Zone: MainZone }, [ MMORoom: PrototypingRoom, Id: 0, Group: default, AOI: (18.0, 2.0, 18.0) ], type = MMORoom
+14:28:49,212 INFO  [main] Extensions     - {RoomExtension}: CharacterManager, InputManager, MovementManager and BulletManager -- initialized
+14:28:49,217 INFO  [main] Extensions     - {RoomExtension}: RoomExtension -- initialized
+14:28:49,219 INFO  [main] Extensions     - {ZoneExtension}: ZoneExtension -- Initialized
+14:28:49,222 INFO  [main] managers.SFSRoomManager     - Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ], type = SFSRoom
+14:28:49,261 INFO  [main] core.AdminToolService     - AdminTool Service started
+14:28:49,681 INFO  [SFSWorker:Sys:1] v2.SmartFoxServer     - Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 0.0.0.0:9933, (Udp) }
+14:28:49,683 INFO  [SFSWorker:Sys:1] v2.SmartFoxServer     -
+ _____ _____ _____    ___ __ __
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|
+ _____ _____ _____ ____  __ __
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|
+
+[ Version: 2.19.3 ]
+(c) gotoAndPlay() 2012-2025
+
+14:28:49,683 INFO  [SFSWorker:Sys:1] v2.SmartFoxServer     - SmartFoxServer 2X (2.19.3) READY!
+14:28:49,685 INFO  [SFSWorker:Ext:2] Extensions     - {RoomExtension}: SERVER_READY
+14:28:49,687 WARN  [SFSWorker:Sys:1] v2.SmartFoxServer     - com.smartfoxserver.v2.exceptions.SFSRuntimeException:
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Exception: com.smartfoxserver.v2.exceptions.SFSRuntimeException
+Message: Using default Admin login and password!
+----------------------------------------------------------------------
+You are currently using the default Admin credentials, which aren't very secure.
+We urge you to connect via the AdminTool and change your Admin credentials.
+Once logged in choose Server Settings > Remote Admin, apply the changes and restart SFS2X.
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+14:28:49,794 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: Loaded noisemap from: C:\Users\Hofmann\SmartFoxServer_2X\Config\CoastlineThresholds.dat
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version name:   Apache Tomcat/9.0.70
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Dec 1 2022 14:05:47 UTC
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version number: 9.0.70.0
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             c:\users\hofmann\smartfoxserver_2x\jre
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           11.0.13+8
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Eclipse Adoptium
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\lib\apache-tomcat
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\lib\apache-tomcat
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dexe4j.semaphoreName=Local\c:_users_hofmann_smartfoxserver_2x_sfs2x_sfs2x-standalone.exe
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dexe4j.isInstall4j=true
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dexe4j.moduleName=C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\sfs2x-standalone.exe
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dexe4j.tempDir=
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dexe4j.unextractedPosition=0
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.library.path=c:\users\hofmann\smartfoxserver_2x\jre\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.22.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jre-11.0.21.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\apache-maven-3.9.6\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.22.7-hotspot\bin;C:\Users\Hofmann\AppData\Local\Microsoft\WindowsApps;C:\Users\Hofmann\.dotnet\tools;C:\Users\Hofmann\AppData\Local\GitHubDesktop\bin;C:\Program Files\apache-maven-3.9.6\bin;
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dexe4j.consoleCodepage=cp850
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dfile.encoding=UTF-8
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dinstall4j.launcherId=34
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dinstall4j.swt=false
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Duser.language=en
+Jan 27, 2025 2:28:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Duser.country=US
+Jan 27, 2025 2:28:49 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [c:\users\hofmann\smartfoxserver_2x\jre\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.22.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jre-11.0.21.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\apache-maven-3.9.6\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.22.7-hotspot\bin;C:\Users\Hofmann\AppData\Local\Microsoft\WindowsApps;C:\Users\Hofmann\.dotnet\tools;C:\Users\Hofmann\AppData\Local\GitHubDesktop\bin;C:\Program Files\apache-maven-3.9.6\bin;]
+14:28:50,079 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: Loaded noisemap from: C:\Users\Hofmann\SmartFoxServer_2X\Config\NoiseMap.dat
+14:28:50,115 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: noiseX: 178 noiseY: 83
+14:28:50,117 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: noiseValue: 4239
+14:28:50,117 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: noiseX highFrequency: 0 noiseY highFrequency: 0
+14:28:50,118 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: noiseDetail: 1663
+14:28:50,118 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: noiseX distortionFrequency: 0 noiseY distortionFrequency: 0
+14:28:50,119 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: noiseDistortion: 1108
+14:28:50,119 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: combinedNoise: 7010
+14:28:50,120 INFO  [SFSWorker:Ext:2] Extensions     - {__lib__}: coastlineThreshold: 8454
+Jan 27, 2025 2:28:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8080"]
+Jan 27, 2025 2:28:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["https-jsse-nio-8443"]
+Jan 27, 2025 2:28:50 PM org.apache.catalina.startup.Catalina load
+INFO: Server initialization in [819] milliseconds
+Jan 27, 2025 2:28:50 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+Jan 27, 2025 2:28:50 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.70]
+Jan 27, 2025 2:28:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\BlueBox.war]
+Matrix successfully saved to C:\Users\Hofmann\SmartFoxServer_2X\Config\ServerTileIDMatrix.dat
+File successfully copied to C:\Users\Hofmann\AppData\LocalLow\DefaultCompany\SpellHellClient\World\ServerTileIDMatrix.dat
+Matrix successfully saved to C:\Users\Hofmann\SmartFoxServer_2X\Config\ServerTileDataMatrix.dat
+File successfully copied to C:\Users\Hofmann\AppData\LocalLow\DefaultCompany\SpellHellClient\World\ServerTileDataMatrix.dat
+Jan 27, 2025 2:28:52 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 27, 2025 2:28:52 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+WARNING: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [176] milliseconds.
+14:28:52,756 INFO  [TomcatRunner] bluebox.BBSessionFilter     - SFS2X Web Service (4.0.2) Ready -- Tomcat: Apache Tomcat/9.0.70
+Jan 27, 2025 2:28:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\BlueBox.war] has finished in [2,111] ms
+Jan 27, 2025 2:28:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\HelloServlet]
+Jan 27, 2025 2:28:55 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 27, 2025 2:28:55 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\HelloServlet] has finished in [2,497] ms
+Jan 27, 2025 2:28:55 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\host-manager]
+14:28:56,933 INFO  [SocketReader] sessions.DefaultSessionManager     - Session created: { Id: 1, Type: DEFAULT, Logged: No, IP: 127.0.0.1:51994 } on Server port: 9933 <---> 51994
+14:28:56,999 INFO  [SFSWorker:Sys:4] api.SFSApi     - User login: { Zone: MainZone }, ( User Name: 226304, Id: 0, Priv: 0, Sess: 127.0.0.1:51994 ) , Type: Unity
+14:28:57,003 INFO  [SFSWorker:Ext:1] api.SFSApi     - Room joined: [ MMORoom: PrototypingRoom, Id: 0, Group: default, AOI: (18.0, 2.0, 18.0) ], { Zone: MainZone }, ( User Name: 226304, Id: 0, Priv: 0, Sess: 127.0.0.1:51994 ) , asSpect: false
+14:28:57,004 INFO  [SFSWorker:Ext:1] Extensions     - {ZoneExtension}: Added user to room.
+14:28:57,014 INFO  [SFSWorker:Ext:3] Extensions     - {RoomExtension}: User 0 joined room PrototypingRoom
+14:28:57,217 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: Character 0 ping: 0
+Jan 27, 2025 2:28:57 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 27, 2025 2:28:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\host-manager] has finished in [2,343] ms
+Jan 27, 2025 2:28:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\logsBackup]
+Jan 27, 2025 2:28:59 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 27, 2025 2:28:59 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\logsBackup] has finished in [2,099] ms
+Jan 27, 2025 2:28:59 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\manager]
+14:29:01,217 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Character 0 ping: 0
+Jan 27, 2025 2:29:01 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 27, 2025 2:29:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\manager] has finished in [2,270] ms
+Jan 27, 2025 2:29:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\ROOT]
+Jan 27, 2025 2:29:04 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 27, 2025 2:29:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory [C:\Users\Hofmann\SmartFoxServer_2X\SFS2X\www\ROOT] has finished in [2,038] ms
+Jan 27, 2025 2:29:04 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8080"]
+Jan 27, 2025 2:29:04 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["https-jsse-nio-8443"]
+Jan 27, 2025 2:29:04 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in [13480] milliseconds
+14:29:05,214 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: Character 0 ping: 0
+14:29:09,213 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: Character 0 ping: 500
+14:29:13,214 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Character 0 ping: 500
+14:29:16,109 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after spawning: 9
+14:29:16,111 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 1.008
+14:29:16,570 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: bulletPool size after spawning: 8
+14:29:16,570 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 1.003
+14:29:17,215 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Character 0 ping: 500
+14:29:17,331 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: bulletPool size after spawning: 7
+14:29:17,331 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.039
+14:29:18,024 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after spawning: 6
+14:29:18,024 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.031999998
+14:29:18,682 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: bulletPool size after spawning: 5
+14:29:18,682 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.037
+14:29:19,375 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: bulletPool size after spawning: 4
+14:29:19,375 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.05
+14:29:19,937 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: bulletPool size after spawning: 3
+14:29:19,937 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.026999999
+14:29:20,511 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after spawning: 2
+14:29:20,511 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.031999998
+14:29:21,065 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: bulletPool size after spawning: 1
+14:29:21,065 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.036
+14:29:21,213 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: Character 0 ping: 11
+14:29:21,554 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after spawning: 0
+14:29:21,554 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.026
+14:29:24,985 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet: 0
+14:29:24,985 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet id:0
+14:29:24,986 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: After MMOApi call
+14:29:24,987 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after despawning: 1
+14:29:25,213 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: Character 0 ping: 11
+14:29:25,448 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: Removing bullet: 1
+14:29:25,448 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: Removing bullet id:1
+14:29:25,449 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: After MMOApi call
+14:29:25,450 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: bulletPool size after despawning: 2
+14:29:27,163 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: Removing bullet: 2
+14:29:27,163 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: Removing bullet id:2
+14:29:27,164 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: After MMOApi call
+14:29:27,164 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: bulletPool size after despawning: 3
+14:29:27,889 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet: 3
+14:29:27,889 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet id:3
+14:29:27,890 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: After MMOApi call
+14:29:27,890 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after despawning: 4
+14:29:28,517 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Removing bullet: 4
+14:29:28,517 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Removing bullet id:4
+14:29:28,519 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: After MMOApi call
+14:29:28,519 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: bulletPool size after despawning: 5
+14:29:29,209 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Removing bullet: 5
+14:29:29,209 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Removing bullet id:5
+14:29:29,211 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: After MMOApi call
+14:29:29,213 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: bulletPool size after despawning: 6
+14:29:29,213 INFO  [pool-1-thread-4] Extensions     - {RoomExtension}: Character 0 ping: 11
+14:29:29,805 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: bulletPool size after spawning: 5
+14:29:29,805 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: MMOItem variable aliveTime: 0.023
+14:29:29,806 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Removing bullet: 6
+14:29:29,806 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: Removing bullet id:6
+14:29:29,807 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: After MMOApi call
+14:29:29,807 INFO  [pool-1-thread-2] Extensions     - {RoomExtension}: bulletPool size after despawning: 6
+14:29:30,364 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet: 7
+14:29:30,364 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet id:7
+14:29:30,366 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: After MMOApi call
+14:29:30,366 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after despawning: 7
+14:29:30,892 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet: 8
+14:29:30,892 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet id:8
+14:29:30,893 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: After MMOApi call
+14:29:30,893 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: bulletPool size after despawning: 8
+14:29:31,421 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: Removing bullet: 9
+14:29:31,421 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: Removing bullet id:9
+14:29:31,421 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: After MMOApi call
+14:29:31,421 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: bulletPool size after despawning: 9
+14:29:33,213 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 10
+14:29:37,214 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 10
+14:29:39,670 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet: 0
+14:29:39,670 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Removing bullet id:0
+14:29:39,671 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: An error occurred in SimulationTask: null
+14:29:39,672 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Stack Trace:  java.lang.NullPointerException
+14:29:41,215 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 10
+14:31:49,758 INFO  [SocketReader] sessions.DefaultSessionManager     - Session removed: { Id: 1, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:51994 }
+14:34:46,020 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 12
+14:34:46,021 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 12
+14:34:46,021 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 12
+14:34:46,021 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 12
+14:34:46,021 INFO  [pool-1-thread-1] Extensions     - {RoomExtension}: Character 0 ping: 12
+14:34:46,021 INFO  [SFSWorker:Sys:3] api.SFSApi     - User disconnected: { Zone: MainZone }, ( User Name: 226304, Id: 0, Priv: 0, Sess: 127.0.0.1:51994 ) , SessionLen: 349022, Type: Unity
+14:34:46,023 INFO  [SFSWorker:Ext:2] Extensions     - {RoomExtension}: User 0 left room PrototypingRoom
