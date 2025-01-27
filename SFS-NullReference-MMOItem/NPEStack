@@ -1,0 +1,14 @@
+17:04:13,100 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: Removing bullet id:0
+17:04:13,101 INFO  [pool-1-thread-3] Extensions     - {RoomExtension}: An error occurred in SimulationTask: null
+java.lang.NullPointerException
+        at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+        at com.smartfoxserver.v2.mmo.MMOItemManager.removeItem(MMOItemManager.java:152)
+        at com.smartfoxserver.v2.mmo.MMORoom.removeMMOItem(MMORoom.java:228)
+        at com.smartfoxserver.v2.api.SFSMMOApi.removeMMOItem(SFSMMOApi.java:169)
+        at manager.CharacterManager$SimulationTask.run(CharacterManager.java:195)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+        at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+        at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base/java.lang.Thread.run(Thread.java:829)
